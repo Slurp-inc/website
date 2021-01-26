@@ -5,50 +5,37 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<title>Slurp Incorporated</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu">
-  <link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu">
+	<link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 	<div id="top">
 		<div id="nav">
-      <div id="nav-fixed"><img id="icon" src="https://media.discordapp.net/attachments/802841041476517929/803581447478312981/rooHyperSip.png"></div>
+			<div id="nav-fixed">
+        <img id="icon" src="https://media.discordapp.net/attachments/802841041476517929/803581447478312981/rooHyperSip.png">
+      </div>
 			<div id="navlinks">
-				<button id="discord">{{ discordjointext }}</button>
+				<button id="discord" href="https://discord.gg/xgTF7rccAk">{{ discordjointext }}</button>
       </div>
     </div>
     <header>{{ headertext }}</header>
+  </div>
+  <div id="main1">
+    <p>{{ message }}</p>
+    <div class="wrapper">
+      <div class="card" v-for="member in members">
+        <img v-bind:src="member.picture" />
+        <h2 class="card-title">{{ member.name }}</h2>
+        <p id="role">{{ member.role }}</p>
+      </div>
     </div>
-    <div id="main1">
-      <p>Say hello to our members!</p>
-      <div class="wrapper">
-  <div class="card">
-    <img src="https://cdn.discordapp.com/avatars/760225250716680283/ce23e7a1dcc18812708bdfdcd66a365c.png?size=128" />
-    <h2 class="card-title">Slurp | CEO</h2>
   </div>
-  <div class="card">
-    <img src="https://cdn.discordapp.com/avatars/689148779948933181/d846f31fd78a743cfe3cab9944f0c575.png?size=128" />
-    <h2 class="card-title">Indeed Slurp | CPO</h2>
-  </div>
-  <div class="card">
-    <img src="https://cdn.discordapp.com/avatars/690283141096669225/c95711434979b82f0b5c579204ff36bd.png?size=128" />
-    <h2 class="card-title">Astley | Computerizer</h2>
-  </div>
-  <div class="card">
-    <img src="https://cdn.discordapp.com/avatars/680457838711144606/2f2c5743441a00d6c767f96a53fdb542.png?size=128" />
-    <h2 class="card-title">Pie | PR</h2>
-  </div>
-  <div class="card">
-    <img src="https://cdn.discordapp.com/avatars/696785956140744796/ae5eb1e0ccdf312928a3acb985e11334.png?size=128" />
-    <h2 class="card-title">Cher | CMO</h2>
-  </div>
-</div>
+  <div id="main2">
+    <div><p id="title">{{ mainmessage }}</p>
+      {{ secondarymessage }}
     </div>
-    <div id="main2">
-      <div><p id="title">Hello Slurps!</p>
-      Join us now! Our fellows Slurps, come to us. </br>
-      We will create the Slurp community.</div>
-    </div>
+  </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="script.js"></script>
   </body>
