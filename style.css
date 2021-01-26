@@ -1,0 +1,147 @@
+* {
+  font-family: Verdana;
+  margin: 0;
+}
+
+#top {
+  width: 100%;
+  background: url('https://i.pinimg.com/originals/26/01/03/2601039697d8c8c730ec09e78a8395e0.png'), linear-gradient(to bottom, #e18aaa, #ffd1dc);
+  height: 500px;
+    background-attachment: fixed;
+  background-position: center;
+}
+
+#nav {
+  align-items: center;
+  padding: 20px;
+  background-color: transparent;
+}
+
+#nav-fixed {
+  display: flex;
+  align-items: center;
+}
+
+#icon {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  width: 65px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 2px 3px 25px black;
+}
+
+#icon:hover {
+  animation: rotate_icon;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+#discord {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  width: 200px;
+  padding: 15px;
+  border-radius: 5px;
+  border: solid 3px white;
+  color: black;
+  background-color: white;
+  font-size: 16px;
+  box-shadow: 2px 3px 51px #000000;
+}
+
+#discord:hover {
+  box-shadow: 2px 3px 25px #000000;
+  transition-duration: 0.25s;
+}
+
+header {
+  color: white;
+  font-family: 'Ubuntu';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  font-size: 72px;
+  text-shadow: 5px 5px 8px black;
+  overflow: hidden;
+}
+
+#main1 {
+  padding: 25px;
+  box-shadow: 2px 2px 25px black;
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.card {
+  margin: 15px;
+  width: 350px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: solid 2px black;
+}
+
+.card:hover {
+  box-shadow: 1px 1px 10px 5px #818181;
+  transition-duration: 0.25s;
+}
+
+.card-title {
+  font-size: 15px;
+}
+
+.card img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+#main2 {
+  display: flex;
+  align-items: center;
+  height: 500px;
+  padding: 50px;
+  background: url('https://i.pinimg.com/originals/26/01/03/2601039697d8c8c730ec09e78a8395e0.png'), linear-gradient(to bottom, #ffaee0, #e18aaa);
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+  text-shadow: 2px 2px 15px black;
+}
+
+#title {
+  text-transform: uppercase;
+  font-family: 'Ubuntu';
+  font-size: 72px;
+}
+
+
+@keyframes rotate_icon {
+  from{}
+  25% {
+    transform: rotateZ(45deg)
+  }
+  75% {
+    transform: rotateZ(-45deg)
+  }
+  100% {
+    transform: rotateZ(0)
+  }
+}
+
+@media screen and (max-width: 650px) {
+  header {
+    font-size: 48px;
+  }
+}
