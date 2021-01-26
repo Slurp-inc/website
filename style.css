@@ -61,6 +61,7 @@ header {
   color: white;
   font-family: 'Ubuntu';
   display: flex;
+  text-align: center;
   justify-content: center;
   align-items: center;
   height: 90%;
