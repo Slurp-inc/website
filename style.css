@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+body {
+  overflow: hidden;  
+}
+
 #top {
   width: 100%;
   background: url('https://i.pinimg.com/originals/26/01/03/2601039697d8c8c730ec09e78a8395e0.png'), linear-gradient(to bottom, #e18aaa, #ffd1dc);
