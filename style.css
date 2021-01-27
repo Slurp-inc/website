@@ -64,15 +64,15 @@ header {
   text-align: center;
   justify-content: center;
   align-items: center;
-  height: 90%;
+  height: 100%;
   font-size: 72px;
   text-shadow: 5px 5px 8px black;
+  box-shadow: inset 2px 2px 25px black;
   overflow: hidden;
 }
 
 #main1 {
   padding: 25px;
-  box-shadow: 2px 2px 25px black;
   height: 100%;
 }
 
@@ -117,6 +117,7 @@ header {
   background: url('https://i.pinimg.com/originals/26/01/03/2601039697d8c8c730ec09e78a8395e0.png'), linear-gradient(to bottom, #ffaee0, #e18aaa);
   background-attachment: fixed;
   background-position: center;
+  box-shadow: inset 2px 2px 25px black;
   color: white;
   text-shadow: 2px 2px 15px black;
 }
