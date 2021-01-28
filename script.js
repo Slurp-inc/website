@@ -1,4 +1,3 @@
-
 new Vue({
   el: '#top',
   data: {
@@ -37,6 +36,11 @@ new Vue({
         name: 'Cher',
         picture: 'https://cdn.discordapp.com/avatars/696785956140744796/ae5eb1e0ccdf312928a3acb985e11334.png?size=128',
         role: 'CMO'
+      },
+      {
+        name: 'Brainy',
+        picture: 'https://cdn.discordapp.com/avatars/763966215261126676/d3e1f8f43062a9eaafa7e4e18d83884f.png?size=128',
+        role: 'CTO'
       }
     ]
   }
