@@ -10,26 +10,44 @@
 </head>
 
 <body>
-	<img id="icon" src="https://media.discordapp.net/attachments/802841041476517929/803581447478312981/rooHyperSip.png">
-	<button id="discord" href="https://discord.gg/xgTF7rccAk">{{ discordjointext }}</button>
+	<div id="top">
+        <img id="icon" src="https://media.discordapp.net/attachments/802841041476517929/803581447478312981/rooHyperSip.png">
+				<button id="discord" href="https://discord.gg/UjmFRdGjRc">{{ discordjointext }}</button>
     <header>{{ headertext }}</header>
   </div>
   <div id="main1">
     <p>{{ message }}</p>
+    <a href="employees.html">Click to find out more about our employees.</a>
     <div class="wrapper">
       <div class="card" v-for="member in members">
-        <img v-bind:src="member.picture" />
+        <img :src="member.picture" />
         <h2 class="card-title">{{ member.name }}</h2>
         <p id="role">{{ member.role }}</p>
       </div>
     </div>
   </div>
   <div id="main2">
-    <div><p id="title">{{ mainmessage }}</p>
+    <div>
+      <p id="title">{{ mainmessage }}</p>
       {{ secondarymessage }}
     </div>
   </div>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script src="script.js"></script>
+  <div id="main3">
+    <p class="pointer" id="pointer1">&rarrtl;&rarrtl;</p>
+    <div id="innermain3">
+      <div id="discord-widget">
+      <div id="top-layer">
+        <img id="server-logo" src="https://media.discordapp.net/attachments/802841041476517929/803581447478312981/rooHyperSip.png">
+        <p id="server-name">Slurp Central</p>
+      </div>
+        <a id="discord-link" href="https://discord.gg/UjmFRdGjRc" title="Join us on Discord">Join us on Discord</a>
+      </div>
+    </div>
+  <p class="pointer" id="pointer2">&larrtl;&larrtl;</p>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="script.js"></script>
   </body>
 </html>
+
+
