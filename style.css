@@ -28,7 +28,7 @@
   left: 15px;
   width: 65px;
   height: auto;
-  border-radius: 50%;
+  border-radius: 100%;
   box-shadow: 2px 3px 25px black;
 }
 
@@ -67,19 +67,21 @@ header {
   height: 100%;
   font-size: 72px;
   text-shadow: 5px 5px 8px black;
-  box-shadow: inset 2px 2px 55px black;
   overflow: hidden;
 }
 
 #main1 {
   padding: 25px;
   height: 100%;
+  box-shadow: 2px 2px 50px black;
 }
 
 .wrapper {
+  padding: 20px;
   display: flex;
   overflow-x: auto;
   overflow-y: hidden;
+  z-index: 50;
 }
 
 .card {
@@ -91,11 +93,11 @@ header {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  border: solid 2px black;
+  box-shadow: 0px 0px 10px 2px #b1adad;
 }
 
 .card:hover {
-  box-shadow: 1px 1px 10px 5px #818181;
+  box-shadow: 0px 0px 10px 2px black;
   transition-duration: 0.25s;
 }
 
@@ -109,15 +111,19 @@ header {
   margin-bottom: 15px;
 }
 
+#role {
+  color: #818181;
+  margin-top: 2px;
+}
+
 #main2 {
   display: flex;
   align-items: center;
-  height: 500px;
+  height: 350px;
   padding: 50px;
-  background: url('https://i.pinimg.com/originals/26/01/03/2601039697d8c8c730ec09e78a8395e0.png'), linear-gradient(to bottom, #ffaee0, #e18aaa);
+  background: url('https://i.pinimg.com/originals/26/01/03/2601039697d8c8c730ec09e78a8395e0.png'), linear-gradient(to bottom, #ffd1dc, #e18aaa);
   background-attachment: fixed;
   background-position: center;
-  box-shadow: inset 2px 2px 55px black;
   color: white;
   text-shadow: 2px 2px 15px black;
 }
@@ -128,6 +134,69 @@ header {
   font-size: 72px;
 }
 
+#main3 {
+  display: flex;
+  flex-direction: row;
+  background: url('https://i.pinimg.com/originals/26/01/03/2601039697d8c8c730ec09e78a8395e0.png'), linear-gradient(to bottom, #ffd1dc, #e18aaa);
+  background-attachment: fixed;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.pointer {
+  color: white;
+  font-family: 'Ubuntu';
+  font-size: 150px;
+  position: relative;
+  top: -30px;
+  margin: 20px;
+}
+
+#innermain3 {
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#discord-widget {
+  box-shadow: 2px 2px 50px black;
+  width: 500px;
+  display: flex;
+  border-radius: 25px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(107, 121, 201);
+  color: black;
+}
+
+#top-layer {
+  border-radius: 25px 25px 0px 0px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+#server-name {
+  text-shadow: 2px 2px 20px #818181;
+  font-family: 'Ubuntu';
+  font-size: 48px;
+  margin-left: 14px;
+}
+
+#server-logo {
+  box-shadow: 2px 2px 50px #818181;
+  border-radius: 50%;
+}
+
+#discord-link {
+  color: white;
+  padding: 20px;
+}
 
 @keyframes rotate_icon {
   from{}
